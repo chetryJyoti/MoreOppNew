@@ -1,0 +1,7 @@
+1.Public facing page(Header,HomePage)
+3.Signup page
+2.LoginPage
+7.Profile page
+4.Hackathons page
+5.Scholarship page
+6.Internships page
