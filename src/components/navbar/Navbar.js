@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        More Opportunities
+        Know Opportunities
       </Link>
       <ul>
         <CustomLink to="/hackathons">Hackathons</CustomLink>
