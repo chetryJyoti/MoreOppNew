@@ -26,8 +26,13 @@ body {
 }
 
 .common_container{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* min-height: 90vh; */
+}
+.common_con-item{
+  border: 1px solid black;
+  margin-left: 18px;
+  border-radius: 10px;
 }

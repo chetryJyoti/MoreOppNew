@@ -1,0 +1,24 @@
+.card {
+    /* margin: 10px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+}
+
+.card img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    background: #26ccd4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}

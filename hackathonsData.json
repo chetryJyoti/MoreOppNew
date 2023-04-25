@@ -1,0 +1,167 @@
+[
+    {
+        "hId": 550,
+        "title": "Hack The Box",
+        "description": "Hack the box is an annual hackathon series by Dev Code Community which is currently consisting of\naround 700+ enthusiastic developers helping each ",
+        "linkToRegister": "https://unstop.com/hackathon/hack-the-box-indian-institute-of-technology-iit-bhubaneswar-482370",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-11 00:00:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/636364f89303b_copy_of_neuro_logo.png",
+        "active": true
+    },
+    {
+        "hId": 551,
+        "title": "Codelentine",
+        "description": "It’s very beginner-friendly. It is an invention marathon where students come together to build cool software & hardware hacks over 24 hours.\n",
+        "linkToRegister": "https://unstop.com/hackathon/codelentine-indian-institute-of-information-technology-iiit-bhagalpur-480721",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-06 13:30:00+05:30",
+        "eligibility": "Ungergrade",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/636200d3f1aee_Indian_Institute_of_Information_Technology,_Bhagalpur_logo.png",
+        "active": true
+    },
+    {
+        "hId": 552,
+        "title": "HackHolyoke",
+        "description": "Students of all backgrounds are invited to explore the possibilities of technology and imagination",
+        "linkToRegister": "https://unstop.com/hackathon/hackholyoke-mount-holyoke-481051",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-11 00:00:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/63624e1b7f5bf_hack_holyoke_logo.png",
+        "active": true
+    },
+    {
+        "hId": 553,
+        "title": "Athena Hacks",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/athena-hacks-showcode-480926",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2023-02-01 00:00:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/636226bf67f8c_athena_hacks_logo.png",
+        "active": true
+    },
+    {
+        "hId": 554,
+        "title": "UniHacks",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/unihacks-unihacks-480103",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-27 00:00:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6361155529649_unihack.png",
+        "active": true
+    },
+    {
+        "hId": 555,
+        "title": "Rock Hacks",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/rock-hacks-hack-club-479990",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-13 00:00:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/636105360ae5e_c87c28c6.png",
+        "active": true
+    },
+    {
+        "hId": 556,
+        "title": "Niural Hackathon",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/niural-hackathon-niural-479609",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-20 19:00:27+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6360bd4f38f81_niural_logo.png",
+        "active": true
+    },
+    {
+        "hId": 557,
+        "title": "HATCH: Taronga Accelerator Program 2023",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/hatch-taronga-accelerator-program-2023-taronga-479605",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-14 11:52:25+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6360bcf30e1e8_taronga_conservation_society_logo.png",
+        "active": true
+    },
+    {
+        "hId": 558,
+        "title": "Hack Your Way",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/hack-your-way-oasis-bits-pilani-birla-institute-of-technology-science-bits-pilani-474352",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-13 23:59:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/635e315d003ca_cc_logo.png",
+        "active": true
+    },
+    {
+        "hId": 559,
+        "title": "Ideathon",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/ideathon-bharati-vidyapeeths-college-of-engineering-bvcoe-new-delhi-478179",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-09 15:05:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/635f6d19c5024_1596779414724.jpg",
+        "active": true
+    },
+    {
+        "hId": 560,
+        "title": "Creda Ideathon",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/creda-ideathon-technovate-2022-international-institute-of-information-technology-iiit-naya-raipur-477025",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-11-07 19:00:00+05:30",
+        "eligibility": "M tech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/635fa4fe47ef0_finalideathon.png",
+        "active": true
+    },
+    {
+        "hId": 561,
+        "title": "First Ever Inter-College Hackathon",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://unstop.com/hackathon/first-ever-inter-college-hackathon-praxis-business-school-kolkata-473114",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-12-04 23:59:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/635abbfc075cc_praxis-business-school-kolkata.jpg",
+        "active": true
+    },
+    {
+        "hId": 562,
+        "title": "Intelligent Innovators Hackathon (I2H) 2022",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://www.eventbrite.com/e/intelligent-innovators-hackathon-i2h-2022-tickets-426050637927",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "05-11-2022  23:59:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F360442809%2F1166012358063%2F1%2Foriginal.20220924-050403?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C129%2C1122%2C561&s=a26dbd746e7e06f85e236dc8fbbbc20b",
+        "active": true
+    },
+    {
+        "hId": 563,
+        "title": "Mina zkApp Developers Meetup - Bangalore",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://www.eventbrite.com/e/mina-zkapp-developers-meetup-bangalore-tickets-382911868707",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-12-01   23:59:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F334548899%2F883048580463%2F1%2Foriginal.20220812-180811?w=400&auto=format%2Ccompress&q=75&sharp=10&s=51c6ad31926047a5309c15ecd72f58da",
+        "active": true
+    },
+    {
+        "hId": 564,
+        "title": "Music Hack Day India (ISMIR 2022 Satellite event)",
+        "description": "A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.",
+        "linkToRegister": "https://www.eventbrite.com/e/music-hack-day-india-ismir-2022-satellite-event-tickets-449349405167",
+        "createdOn": 1671553427259,
+        "lastDayToRegister": "2022-12-11   23:59:00+05:30",
+        "eligibility": "Btech",
+        "bannerImgLink": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F379037569%2F253449631719%2F1%2Foriginal.20221024-081836?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C39%2C1920%2C960&s=1983c075bc9177a9e0d753ba47e40d8c",
+        "active": true
+    }
+]
