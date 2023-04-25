@@ -23,7 +23,7 @@ const Navbar = () => {
         <CustomLink to="/hackathons">Hackathons</CustomLink>
         <CustomLink to="/scholarships">Scholarships</CustomLink>
         <CustomLink to="/internships">Internships</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/about">AboutUs</CustomLink>
         <CustomLink to="/signup">Signup</CustomLink>
       </ul>
     </nav>
