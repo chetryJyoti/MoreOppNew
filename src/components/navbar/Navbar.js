@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="nav">
+    <nav className="nav ">
       <Link to="/" className="site-title">
         Know Opportunities
       </Link>
