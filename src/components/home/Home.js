@@ -12,11 +12,17 @@ const Home = () => {
           <div className="home_body_item">
             <div>Learning Curves</div>
             <div>
-              <Link to="/hackathons" style={{ textDecoration: "none", color: "inherit" }}>Compete in Hackathons</Link>
+              <Link
+                to="/hackathons"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Compete in Hackathons
+              </Link>
             </div>
             <div>Apply for Scholarhips</div>
             <div>Internships</div>
             <div>Create Resume powered by ChatGpt</div>
+            <h1 className="text-3xl font-bold underline bg-green">Hello world!</h1>
           </div>
         </div>
       </div>
