@@ -25,6 +25,7 @@ const Navbar = () => {
         <CustomLink to="/internships">Internships</CustomLink>
         <CustomLink to="/about">AboutUs</CustomLink>
         <CustomLink to="/signup">Signup</CustomLink>
+        <CustomLink to="/profile">Profile</CustomLink>
       </ul>
     </nav>
   );
