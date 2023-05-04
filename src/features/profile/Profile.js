@@ -1,23 +1,105 @@
 import React, { useState } from 'react';
-
+import Popup from '../../components/popup/Popup';
 
 const Profile = () => {
-  const [showPopup, setShowPopup] = useState(false);
+  const [showEducationPopup, setShowEducationPopup] = useState(false);
   const [education, setEducation] = useState('');
-  const [displayText, setDisplayText] = useState('');
+  const [displayEducation, setDisplayEducation] = useState('');
 
+  const [showSkillsPopup, setShowSkillsPopup] = useState(false);
+  const [skills, setSkills] = useState('');
+  const [displaySkills, setDisplaySkills] = useState('');
+
+  const [showExperience, setShowExperience] = useState(false);
+  const [experience, setExperience] = useState('');
+  const [displayExperience, setDisplayExperience] = useState('');
+
+  const [showProject, setShowProject] = useState(false);
+  const [projects, setProjects] = useState('');
+  const [displayProjects, setDipslayProjects] = useState('');
+
+  //
+  const SaveAll = () => {
+    const data = {
+      "education": education,
+      "skills": skills,
+      "experience": experience,
+      "projects": projects
+    }
+    console.log("savedData:", data);
+  }
+  // For Education
   const handleSaveEducation = () => {
-    setShowPopup(false);
-    // add code here to save the education value
+    setShowEducationPopup(false);
     console.log('Education value:', education);
-    setDisplayText(education || '');
+    setDisplayEducation(education || '');
   };
 
   const handleCancelEducation = () => {
-    setShowPopup(false);
+    setShowEducationPopup(false);
     setEducation('');
-    // add code here to reset the education value if necessary
   };
+
+  // For Skills
+  const handleSaveSkills = () => {
+    setShowSkillsPopup(false);
+    console.log('Skills value:', skills);
+    setDisplaySkills(skills || '');
+  };
+
+  const handleCancelSkills = () => {
+    setShowSkillsPopup(false);
+    setSkills('');
+  };
+
+  // For Experience
+  const handleSaveExperiences = () => {
+    setShowExperience(false);
+    console.log("Experiences value", experience);
+    setDisplayExperience(experience || '');
+  };
+
+  const handleCancelExperiences = () => {
+    setShowExperience(false);
+    setExperience('');
+  };
+
+  // For Projects
+  const handleSaveProjects = () => {
+    setShowProject(false);
+    console.log('Projects value', projects);
+    setDipslayProjects(projects || '');
+  }
+
+  const handleCancelProjects = () => {
+    setShowProject(false);
+    setProjects('');
+  }
+
+  const checkPopUpOnOff = (value) => {
+    if (value === "edu") {
+      setShowEducationPopup(true);
+      setShowSkillsPopup(false);
+      setShowExperience(false);
+      setShowProject(false);
+    } else if (value === "skill") {
+      setShowEducationPopup(false);
+      setShowSkillsPopup(true);
+      setShowExperience(false);
+      setShowProject(false);
+    } else if (value === "exp") {
+      setShowEducationPopup(false);
+      setShowSkillsPopup(false);
+      setShowExperience(true);
+      setShowProject(false);
+    } else {
+      setShowEducationPopup(false);
+      setShowSkillsPopup(false);
+      setShowExperience(false);
+      setShowProject(true);
+    }
+  }
+
 
   return (
     <div className='h-full w-full'>
@@ -31,30 +113,62 @@ const Profile = () => {
         <form className='h-20 border-solid border-2 border-sky-600 rounded-lg flex justify-between'>
           <h1 className='ml-2 text-xl'>Education:</h1>
           <div className="flex w-full ">
-            <p className="p-1">{displayText}</p>
+            <h5 className="p-1">{displayEducation}</h5>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-2 mt-1 w-6 h-6" onClick={() => setShowPopup(true)}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-2 mt-1 w-6 h-6" onClick={() => checkPopUpOnOff("edu")}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
           </svg>
         </form>
-        {showPopup && (
-          <div className="absolute bottom-50 left-1/2 transform -translate-x-1/2 w-1/2 p-4 bg-white border border-gray-300 rounded-md shadow-lg">
-            <h2 className="text-lg font-bold mb-2">Add</h2>
-            <p className="mb-4">
-              <form className=' w-full border-solid border-2 border-black p-1'>
-                <input className=' w-full border-none outline-none' onChange={(e) => setEducation(e.target.value)} />
-              </form>
-            </p>
-            <div className="flex gap-2">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md" onClick={handleCancelEducation}>Cancel</button>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md" onClick={handleSaveEducation}>Save</button>
-            </div>
-          </div>
+        {showEducationPopup && (
+          <Popup title="Add Education" onChange={(e) => setEducation(e.target.value)} onCancel={handleCancelEducation} onSave={handleSaveEducation} />
         )}
+
+        <form className='h-20 border-solid border-2 border-sky-600 rounded-lg flex justify-between'>
+          <h1 className='ml-2 text-xl'>Skills:</h1>
+          <div className="flex w-full">
+            <h5 className="p-1">{displaySkills}</h5>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-2 mt-1 w-6 h-6" onClick={() => checkPopUpOnOff("skill")}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </form>
+        {showSkillsPopup && (
+          <Popup title="Add Skills" onChange={(e) => setSkills(e.target.value)} onCancel={handleCancelSkills} onSave={handleSaveSkills} />
+        )}
+
+        <form className='h-20 border-solid border-2 border-sky-600 rounded-lg flex justify-between'>
+          <h1 className='ml-2 text-xl'>Experience:</h1>
+          <div className="flex w-full">
+            <h5 className="p-1">{displayExperience}</h5>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-2 mt-1 w-6 h-6" onClick={() => checkPopUpOnOff("exp")}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </form>
+        {showExperience && (
+          <Popup title="Add Expreiences" onChange={(e) => setExperience(e.target.value)} onCancel={handleCancelExperiences} onSave={handleSaveExperiences} />
+        )}
+
+        <form className='h-20 border-solid border-2 border-sky-600 rounded-lg flex justify-between'>
+          <h1 className='ml-2 text-xl'>Project:</h1>
+          <div className="flex w-full">
+            <h5 className="p-1">{displayProjects}</h5>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-2 mt-1 w-6 h-6" onClick={() => checkPopUpOnOff()}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </form>
+        {showProject && (
+          <Popup title="Add Projects" onChange={(e) => setProjects(e.target.value)} onCancel={handleCancelProjects} onSave={handleSaveProjects} />
+        )}
+      </div>
+      <div className='flex w-full h-full items-center justify-center'>
+        <button className='justify-center h-8 w-12 bg-sky-600 rounded-lg text-white hover:bg-sky-700 active:bg-sky-800 focus:outline-none focus:ring focus:ring-violet-300' onClick={SaveAll}>Save</button>
       </div>
     </div>
   );
 };
 
-
 export default Profile;
+
+
