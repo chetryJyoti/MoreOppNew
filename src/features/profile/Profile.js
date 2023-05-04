@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 
+
 const Profile = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [education, setEducation] = useState('');
+  const [displayText, setDisplayText] = useState('');
 
   const handleSaveEducation = () => {
     setShowPopup(false);
     // add code here to save the education value
     console.log('Education value:', education);
+    setDisplayText(education || '');
   };
 
   const handleCancelEducation = () => {
     setShowPopup(false);
-    
+    setEducation('');
     // add code here to reset the education value if necessary
   };
 
@@ -28,9 +31,7 @@ const Profile = () => {
         <form className='h-20 border-solid border-2 border-sky-600 rounded-lg flex justify-between'>
           <h1 className='ml-2 text-xl'>Education:</h1>
           <div className="flex w-full ">
-            {education && (
-              <p className="p-1">{education}</p>
-            )}
+            <p className="p-1">{displayText}</p>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-2 mt-1 w-6 h-6" onClick={() => setShowPopup(true)}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -54,5 +55,6 @@ const Profile = () => {
     </div>
   );
 };
+
 
 export default Profile;
