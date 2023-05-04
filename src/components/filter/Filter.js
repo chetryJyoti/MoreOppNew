@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./filter.css";
+// import "./filter.css";
 
 const Filter = ({ filters, onChange }) => {
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -20,33 +20,36 @@ const Filter = ({ filters, onChange }) => {
   };
 
   return (
-    <div className="filter_con">
-      <div>
-        <h4>Filters</h4>
-        <ul>
-          {filters.map((filter) => (
-            <li key={filter.value}>
-              <label>
-                <input
-                  type="checkbox"
-                  value={filter.value}
-                  checked={selectedFilters.includes(filter.value)}
-                  onChange={handleFilterChange}
-                />
-                {filter.label}
-              </label>
-            </li>
-          ))}
-        </ul>
-        <div className="filter_btns">
-        <button onClick={clearAllFilters}>Clear All Filters</button>
+    <div className="border-solid border-4 border-black-300 rounded-lg w-full h-full p-3">
+      <h2 className="text-2xl">Filters</h2>
+      <ul className="py-2">
+        {filters.map((filter) => (
+          <li key={filter.value}>
+            <label>
+              <input
+                type="checkbox"
+                value={filter.value}
+                checked={selectedFilters.includes(filter.value)}
+                onChange={handleFilterChange}
+              />
+              {filter.label}
+            </label>
+          </li>
+        ))}
+      </ul>
+      <div className="filter_btns">
         <button
+          className="border-solid border-2 border-black px-2 rounded-md mb-1"
           onClick={() => onChange(selectedFilters, selectedEligibilities)}
         >
           Apply Filters
         </button>
-        </div>
-        
+        <button
+          className="border-solid border-2 border-black px-2 rounded-md "
+          onClick={clearAllFilters}
+        >
+          Clear All Filters
+        </button>
       </div>
     </div>
   );

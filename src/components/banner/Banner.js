@@ -19,17 +19,17 @@ const Banner = () => {
         loop // Enable loop mode
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }} 
-        onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <img src={img1} alt="hackathons" className="banner-img" />
+          <img src={img1} alt="hackathons" className="w-full h-52 object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img2} alt="intenships" className="banner-img"  />
+          <img src={img2} alt="intenships" className="w-full h-52 object-cover rounded-lg"  />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img3} alt="scholarships" className="banner-img"  />
+          <img src={img3} alt="scholarships" className="w-full h-52 object-cover rounded-lg"  />
         </SwiperSlide>
       
       </Swiper>

@@ -2,8 +2,7 @@ import React from 'react'
 
 const  About = () => {
   return (
-    <div className='container'>
-       <div className="about_us">
+       <div className="mx-35 p-7">
         <h1>About us </h1>
         <h5>
           <span style={{ color: "blue" }}>Team members:</span> <br /> JYOTI
@@ -33,7 +32,7 @@ const  About = () => {
           Project link
         </a>
       </div>
-    </div>
+    
   )
 }
 
