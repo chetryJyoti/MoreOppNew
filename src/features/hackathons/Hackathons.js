@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Filter from "../../components/filter/Filter";
 import ClipLoader from "react-spinners/ClipLoader";
+import axios from "axios";
 const Hackathons = () => {
   const HACKATHON_URL = "http://localhost:8090/hackathons/";
   // const HACKATHON_URL = process.env.HACKATHON_URL;
@@ -8,17 +9,37 @@ const Hackathons = () => {
   const [filteredHackathons, setFilteredHackathons] = useState([]); // Filtered hackathons based on selected filters
   const [isLoading, setIsLoading] = useState(true);
 
-  const fetchHackathonsData = async () => {
-    try {
-      const response = await fetch(HACKATHON_URL);
-      const data = await response.json();
-      console.log("data:", data);
-      setHackathonsData(data);
-      setFilteredHackathons(data); // Set filtered hackathons to all hackathons by default
-      setIsLoading(false);
-    } catch (error) {
-      console.error("Failed to fetch hackathons data:", error);
-    }
+  // const fetchHackathonsData = async () => {
+  //   try {
+  //     const response = await fetch(HACKATHON_URL);
+  //     const data = await response.json();
+  //     console.log("data:", data);
+  //     setHackathonsData(data);
+  //     setFilteredHackathons(data); // Set filtered hackathons to all hackathons by default
+  //     setIsLoading(false);
+  //   } catch (error) {
+  //     console.error("Failed to fetch hackathons data:", error);
+  //   }
+  // };
+  const fetchHackathonsData =async () => {
+    await axios
+      .get(HACKATHON_URL, {
+        headers: {
+          Authorization: `Bearer ${
+            localStorage.getItem("token")
+              ? JSON.parse(localStorage.getItem("token"))
+              : null
+          }`,
+        },
+      })
+      .then( (response) => {
+        const data = response.data;
+        console.log("data:", data);
+        setHackathonsData(data);
+        setFilteredHackathons(data); // Set filtered hackathons to all hackathons by default
+        setIsLoading(false);
+        console.log("hackathons:", response.data);
+      });
   };
 
   useEffect(() => {
@@ -63,14 +84,17 @@ const Hackathons = () => {
                 size={28}
                 aria-label="Loading Spinner"
                 data-testid="loader"
-                />
-                 Loding...
+              />
+              Loding...
             </div>
           )}
 
           {!isLoading &&
             filteredHackathons.map((hackathon) => (
-              <div key={hackathon.hId} className="flex gap-4 items-center border-solid border-b-4 border-black-300 mb-3 p-3">
+              <div
+                key={hackathon.hId}
+                className="flex gap-4 items-center border-solid border-b-4 border-black-300 mb-3 p-3"
+              >
                 <div className="aspect-w-16 aspect-h-9">
                   <img
                     src={hackathon.bannerImgLink}

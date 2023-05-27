@@ -18,10 +18,10 @@ const Popup = (props) => {
                 </form>
             </div>
             <div className="flex justify-end gap-1">
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={onCancel}>
+                <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={onCancel}>
                     Cancel
                 </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2" onClick={onSave}>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2" onClick={onSave}>
                     Save
                 </button>
             </div>

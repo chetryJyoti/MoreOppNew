@@ -7,6 +7,7 @@ import Hackathons from "./features/hackathons/Hackathons";
 import Internships from "./features/internships/Internships";
 import Scholarships from "./features/scholarships/Scholarships";
 import Signup from "./features/auth/Signup";
+import Login from "./features/auth/Login";
 import Profile from "./features/profile/Profile"
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/internships" element={<Internships />} />
           <Route path="/about" element={<About/>}/>
           <Route path="/signup" element={<Signup />} />
+          <Route path='/login' element={<Login/>}/>
           <Route path="/profile" element={<Profile />} />
         </Routes>
     </>
