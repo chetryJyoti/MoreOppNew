@@ -276,7 +276,7 @@ const Profile = () => {
         >
           Save
         </button>
-        <button onClick={doLogout()} className="m-0 p-0 ">Logout</button>
+        <button onClick={doLogout} className="m-0 p-0 ">Logout</button>
       </div>
     </div>
   );

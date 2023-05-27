@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "./filter.css";
 
 const Filter = ({ filters, onChange }) => {
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -25,7 +24,7 @@ const Filter = ({ filters, onChange }) => {
       <ul className="py-2">
         {filters.map((filter) => (
           <li key={filter.value}>
-            <label>
+            <label className="flex gap-2 items-center">
               <input
                 type="checkbox"
                 value={filter.value}
@@ -37,18 +36,15 @@ const Filter = ({ filters, onChange }) => {
           </li>
         ))}
       </ul>
-      <div className="filter_btns">
+      <div className="flex gap-1">
         <button
-          className="border-solid border-2 border-black px-2 rounded-md mb-1"
+          className="mb-1 w-26"
           onClick={() => onChange(selectedFilters, selectedEligibilities)}
         >
-          Apply Filters
+          Apply
         </button>
-        <button
-          className="border-solid border-2 border-black px-2 rounded-md "
-          onClick={clearAllFilters}
-        >
-          Clear All Filters
+        <button onClick={clearAllFilters} className="w-24">
+          Clear
         </button>
       </div>
     </div>
