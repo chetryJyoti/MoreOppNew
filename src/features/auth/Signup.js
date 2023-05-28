@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../auth/Signup.css";
@@ -75,12 +76,9 @@ const Signup = () => {
       });
   };
   return (
-    <div className="mx-35 p-7 signup_page">
-      <div className="sSvg">
-        <img className="signSvg" src={signupSVG} alt="Signup svg image"></img>
-      </div>
-      <div className="container">
-        {/* {JSON.stringify(data)} */}
+     <div className="mx-35 p-7 flex items-center justify-center ">
+      <img className="h-96 mr-6" src={signupSVG} alt="Signup_img" />
+      <div className="signup_page ml-6">
         <h1>SignUp</h1>
         <form onSubmit={submitForm}>
           <div className="cont3">
@@ -178,14 +176,15 @@ const Signup = () => {
         />
         {/* Same as */}
         <ToastContainer />
-        <p className="existing_acount">
+        <p className="text-center">
           Already have an account ?
           <Link to="/Login" style={{ textDecoration: "none" }}>
-            <span>Login</span>
+            <span className="text-blue-500 ml-2">Login</span>
           </Link>
         </p>
       </div>
     </div>
+    
   );
 };
 

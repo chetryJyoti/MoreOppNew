@@ -8,14 +8,11 @@ const Home = () => {
       <div className="mt-3">
         <h3 className="text-xl mb-2">Explore:</h3>
         <div className="flex justify-between ">
-          <div className="border-solid border-2 border-sky-500 rounded-md p-2">
-            <Link
-              to="/"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-             Learning Curves
+          {/* <div className="border-solid border-2 border-sky-500 rounded-md p-2">
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+              Learning Curves
             </Link>
-          </div>
+          </div> */}
           <div className="border-solid border-2 border-sky-500 rounded-md p-2">
             <Link
               to="/hackathons"
@@ -41,16 +38,13 @@ const Home = () => {
             </Link>
           </div>
           <div className="border-solid border-2 border-sky-500 rounded-md p-2">
-            <Link
-              to="/"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
               Create Resume powered by ChatGpt
             </Link>
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 

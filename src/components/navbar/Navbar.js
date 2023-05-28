@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className="nav ">
-      <Link to="/" className="site-title">
+      <Link to="/home" className="site-title">
         Know Opportunities
       </Link>
       <ul>
@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* we dont have user */}
         {user == null && (
           <div className="flex gap-3">
-            <CustomLink to="/signup">Signup</CustomLink>
+            <CustomLink to="/">Signup</CustomLink>
             <CustomLink to="/login">Login</CustomLink>
           </div>
         )}
