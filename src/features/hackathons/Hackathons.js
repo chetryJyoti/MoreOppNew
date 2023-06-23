@@ -4,8 +4,6 @@ import ClipLoader from "react-spinners/ClipLoader";
 import axios from "axios";
 
 const Hackathons = () => {
-  const HACKATHON_URL = "http://localhost:8090/hackathons/";
-
   const [hackathonsData, setHackathonsData] = useState([]); // Hackathons data from API
   const [filteredHackathons, setFilteredHackathons] = useState([]); // Filtered hackathons based on selected filters
   const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +11,7 @@ const Hackathons = () => {
 
   const fetchHackathonsData = async () => {
     await axios
-      .get(HACKATHON_URL, {
+      .get(process.env.REACT_APP_HACKATHON_LINK, {
         headers: {
           Authorization: `Bearer ${
             localStorage.getItem("token")
@@ -71,9 +69,7 @@ const Hackathons = () => {
   return (
     <div className="mx-35 p-7">
       <div className="flex">
-        <div
-          className="border-4 border-solid border-gray-200 rounded-md w-full mb-2 mr-1"
-        >
+        <div className="border-4 border-solid border-gray-200 rounded-md w-full mb-2 mr-1">
           <input
             type="text"
             placeholder="Search..."

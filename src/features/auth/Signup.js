@@ -5,7 +5,7 @@ import "../auth/Signup.css";
 import { signUp } from "../../services/userService";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import signupSVG from "../../assets/signupSVG.svg";
+import signupSVG from "../../assets/undrawSignup1.svg";
 const Signup = () => {
   const [data, setData] = useState({
     username: "",
@@ -76,8 +76,8 @@ const Signup = () => {
       });
   };
   return (
-     <div className="mx-35 p-7 flex items-center justify-center ">
-      <img className="h-96 mr-6" src={signupSVG} alt="Signup_img" />
+     <div className="mx-35 p-5 flex items-center gap-10 justify-center ">
+      <img className="h-80 mr-10" src={signupSVG} alt="Signup_img" />
       <div className="signup_page ml-6">
         <h1>SignUp</h1>
         <form onSubmit={submitForm}>
